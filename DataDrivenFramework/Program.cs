@@ -27,7 +27,7 @@ namespace DataDrivenFramework
 
             //var data = fileRead.XmlToDic(propDir); 
             
-            IWebDriver driver = new FirefoxDriver(@"D:\Mine\Company\Maveric\Driver");
+            IWebDriver driver = new ChromeDriver(@"D:\Mine\Company\Maveric\Driver");
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(90));
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(40);
             //driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(5);
