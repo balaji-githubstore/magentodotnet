@@ -24,25 +24,25 @@ namespace DataDrivenFramework
 
         static void Main(string[] args)
         {
-            Console.WriteLine(ParentDir);
-            ////var data = fileRead.XmlToDic(propDir); 
-            
-            //IWebDriver driver = new ChromeDriver(@"D:\Mine\Company\Maveric\Driver");
-            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(90));
-            //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(40);
-            ////driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(5);
-            //driver.Manage().Window.Maximize();
-            ////Process.Start(@"D:\Mine\Company\ABC\Doc\chrome_login.exe");
-            ////driver.Url = "https://www.engprod2-spectrumbusiness.net";
-            //driver.Url = "file:///D:/Mine/PythonCode/All%20Code/HTML-CSS/DEMO1.html";
-            //driver.FindElement(By.Id("fileToUpload")).Click();
-            //// string configUrl = ConfigurationManager.AppSettings["url"];
-            //var process=Process.Start(@"D:\Mine\Company\ABC\Doc\Uploadautoit.exe");
-            //process.WaitForExit();
-            //String xmlDir = ParentDir + @"\Test Data\magentodata.xml";
-            //String propDir = ParentDir + @"\Test Data\data.properties";
 
-            //FileReader fileRead = new FileReader();
+            //var data = fileRead.XmlToDic(propDir); 
+            
+            IWebDriver driver = new ChromeDriver(@"D:\Mine\Company\Maveric\Driver");
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(90));
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(40);
+            //driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(5);
+            driver.Manage().Window.Maximize();
+            //Process.Start(@"D:\Mine\Company\ABC\Doc\chrome_login.exe");
+            //driver.Url = "https://www.engprod2-spectrumbusiness.net";
+            driver.Url = "file:///D:/Mine/PythonCode/All%20Code/HTML-CSS/DEMO1.html";
+            driver.FindElement(By.Id("fileToUpload")).Click();
+            // string configUrl = ConfigurationManager.AppSettings["url"];
+            var process=Process.Start(@"D:\Mine\Company\ABC\Doc\Uploadautoit.exe");
+            process.WaitForExit();
+            String xmlDir = ParentDir + @"\Test Data\magentodata.xml";
+            String propDir = ParentDir + @"\Test Data\data.properties";
+
+            FileReader fileRead = new FileReader();
 
             //var data = fileRead.XmlToDic(propDir); 
             //var data = fileRead.XmlToDic(xmlDir);
